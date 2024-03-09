@@ -1,0 +1,28 @@
+body,
+html {
+  margin: 0;
+}
+.box {
+  color: red;
+  font-size: 20px;
+  width: 20vw;
+  height: 20vh;
+}
+.box li {
+  margin: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 20px;
+}
+.box li:first-child {
+  background-color: green;
+  color: green;
+}
+.box li:first-child::selection {
+  background-color: red;
+  border-style: 10px dashed #999;
+  color: green;
+}
+.box li:last-child {
+  color: orange;
+}
