@@ -322,3 +322,32 @@ border-radius: 5%; */
   background-color: var(--pink);
   border-radius: 5%;
 }
+@media screen and (max-width: 768px) {
+  .content {
+      flex-direction: column; /* Chuyển thành cột */
+      height: auto; /* Điều chỉnh chiều cao tự động */
+  }
+
+  .content_left,
+  .content_right {
+      width: 100%; /* Sửa lại chiều rộng để lấp đầy không gian */
+  }
+
+  .content_left {
+      order: 2; /* Đổi vị trí của phần tử sang dưới */
+  }
+
+  .content_left .letter img {
+      max-width: 100%; /* Đảm bảo hình ảnh thu nhỏ trên các thiết bị nhỏ hơn */
+      position: relative;
+      right: 0; /* Đưa hình ảnh về vị trí ban đầu */
+      top: 0;
+  }
+}
+
+/* Phông chữ và màu sắc khác nhau cho các thiết bị */
+@media screen and (max-width: 480px) {
+  h3 {
+      font-size: 24px; /* Phông chữ nhỏ hơn */
+  }
+}
