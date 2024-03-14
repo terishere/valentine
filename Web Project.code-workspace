@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../Web Project"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "D:/my-app"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "tmp"
+	}
+}
